@@ -1,5 +1,5 @@
-※vibe codingです(Antigravity, Gemini 3 Pro - high)
-パラグラフごとにも文字数カウントできるプログラム
+※vibe codingです(Antigravity, Gemini 3 Pro - high)  
+パラグラフごとでも文字数カウントできるプログラム
 
 以下プロンプト
 ```
