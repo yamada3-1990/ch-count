@@ -1,0 +1,27 @@
+# Task List: Character Count Web App
+
+- [x] Clarify Requirements <!-- id: 0 -->
+    - [x] Confirm tech stack (Vite + React) <!-- id: 1 -->
+    - [x] Confirm "Space Highlighting" method (Real-time A: Backdrop/Overlay method) <!-- id: 2 -->
+- [x] Documentation <!-- id: 3 -->
+    - [x] Create REQUIREMENTS.md <!-- id: 4 -->
+    - [x] Create implementation_plan.md <!-- id: 5 -->
+- [x] Project Setup <!-- id: 6 -->
+    - [x] Initialize Git Repository <!-- id: 7 -->
+    - [x] Set up Project Structure (HTML/CSS/JS or Vite) <!-- id: 8 -->
+- [x] Implementation <!-- id: 9 -->
+    - [x] Build User Interface <!-- id: 10 -->
+        - [x] Main Input Area <!-- id: 11 -->
+        - [x] Options Sidebar/Header <!-- id: 12 -->
+        - [x] Result Display (Total, Paragraphs) <!-- id: 13 -->
+    - [x] Implement Counting Logic <!-- id: 14 -->
+        - [x] Character Count (with/without newlines) <!-- id: 15 -->
+        - [x] Space Counting <!-- id: 16 -->
+        - [x] Paragraph Logic <!-- id: 17 -->
+    - [x] Implement Space Highlighting <!-- id: 18 -->
+- [x] Verification <!-- id: 19 -->
+    - [x] Automated Tests (build check) <!-- id: 20 -->
+    - [x] Manual Verification (Browser) <!-- id: 21 -->
+- [x] Deployment/Delivery <!-- id: 22 -->
+    - [x] Push to GitHub <!-- id: 23 -->
+    - [x] Final Review <!-- id: 24 -->
