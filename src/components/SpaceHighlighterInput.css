@@ -1,0 +1,72 @@
+
+.input-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* or flex height */
+  font-family: 'Inter', monospace; /* Monospace helps alignment, but variable width is possible if styles match exactly */
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--color-bg-surface, #ffffff);
+  border: 1px solid #e2e8f0;
+}
+
+.input-container:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.backdrop,
+textarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+  border: none;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  resize: none;
+  background: transparent;
+  box-sizing: border-box; /* Critical */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.backdrop {
+  z-index: 1;
+  color: transparent; /* Hide text, only show background of spans */
+  pointer-events: none; /* Let clicks pass through to textarea */
+}
+
+textarea {
+  z-index: 2;
+  color: inherit; /* Visible text on top */
+  background: transparent;
+  outline: none;
+}
+
+/* The actual space highlight */
+.space-highlight {
+  background-color: rgba(59, 130, 246, 0.3); /* Light blue */
+  border-radius: 2px;
+  display: inline;
+}
+
+/* Dark mode support fallback */
+@media (prefers-color-scheme: dark) {
+  .input-container {
+    background-color: #1a1a1a;
+    border-color: #333;
+    color: #e2e8f0;
+  }
+  .space-highlight {
+    background-color: rgba(96, 165, 250, 0.4);
+  }
+}

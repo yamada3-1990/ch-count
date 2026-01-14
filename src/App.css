@@ -1,0 +1,67 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-header {
+  padding: 20px 32px;
+  background-color: var(--color-bg-surface);
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.app-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.input-section {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.stats-section {
+  width: 320px;
+  min-width: 320px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    height: auto;
+    overflow: auto;
+  }
+
+  .app-main {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .stats-section {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+  }
+}
